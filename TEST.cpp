@@ -7,4 +7,6 @@ int main()
     b = 5;
     c = a + b;
     std::cout << c;
+
+    std::cout << "Leonid krasava" << std::endl;
 }
