@@ -1,9 +1,5 @@
 ﻿#include <iostream>
 
-void abc() {
-    std::cout << "abc() called" << std::endl;
-}
-
 int main()
 {
     int a, b, c;
@@ -13,5 +9,9 @@ int main()
     std::cout << c;
     abc();
     std::cout << "Leonid krasava" << std::endl;
+}
 
+void abc()
+{
+    std::cout << 1 + 2;
 }
