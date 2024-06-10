@@ -2,5 +2,9 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a, b, c;
+    a = 5;
+    b = 5;
+    c = a + b;
+    std::cout << c;
 }
