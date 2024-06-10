@@ -1,4 +1,9 @@
 ﻿#include <iostream>
+#include <string>
+
+using namespace std;
+static void abc();
+static std::string abc(std::string a);
 
 int main()
 {
@@ -6,12 +11,21 @@ int main()
     a = 5;
     b = 5;
     c = a + b;
-    std::cout << c;
+    std::cout << c << endl;
     abc();
-    std::cout << "Leonid krasava" << std::endl;
+    cout << "Leonid krasava" << std::endl;
+    string g = abc("asd");
+
+    cout << g;
 }
 
-void abc()
+static void abc()
 {
-    std::cout << 1 + 2;
+    std::cout << 1 + 2 << endl;
+}
+
+static std::string abc(std::string a)
+{
+    std::cout << a << std::endl;
+    return a + "!!!";
 }
